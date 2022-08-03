@@ -1,7 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 
 const UseStateBasics = () => {
-  return <h2>useState basic example</h2>;
-};
+  const value = useState(1)[0]
+  const handles = useState(1)[1]
 
-export default UseStateBasics;
+  console.log(value, handles)
+
+  return <h2>useState basic example</h2>
+}
+
+export default UseStateBasics
